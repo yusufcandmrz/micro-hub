@@ -9,3 +9,10 @@ spring:
       server:
         git:
           uri: https://github.com/yusufcandmrz/micro-hub-config.git
+          clone-on-start: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
